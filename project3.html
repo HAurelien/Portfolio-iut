@@ -12,15 +12,30 @@
     </header>
 
     <section id="presentation">
-        <h3>Qui suis-je ?</h3>
-        <p>Alternant pour ma 3ème année de Bachelor en développement Informatique, voici un extrait de quelques-un des projets de ma formation. Je m'engage maintenant sur la voie de l'IA en Master.</p>
+        <h3>Qu'est-ce que c'est ?</h3>
+        <p>Ceci est projet réalisé en binôme d'une application de chat avec gestion de groupes de conversation, et un gestionnaire de document assez avancé.</p>
+        <h3>Comment ça a été fait ?</h3>
+        <p>Le projet a été réalisé en Django, avec du Javascript natif et une BD postgresql, dont le développement a été répartis sur un semestre de cours en 2ème année.</p>
+        <h3>Coté technique</h3>
+        <p>L'application est séparée en deux parties : le système de fichiers, avec un fonctionnement similaire au système de fichiers d'un OS, et le système de messagerie. Cette séparation nette a été décidée pour permettre la création future de serveurs et de gestion de droits. L'application étant prévue pour être utilisée par les professeurs et étudiants de l'université, a été prévu par exemple différents scripts pour importer des fichiers CSV renseignant les futurs utilisateurs de l'application.</p>
+    </section>
+
+    <section id="content">
+        <div id="part1">
+            <h4>Voici le système de conversation, permettant différentes options classiques comme le fait de répondre ou d'éditer un message. Il est aussi possible d'envoyer des documents, qu'on retrouvera et gérera ensuite dans l'autre interface sous le fichier du nom de l'utilisateur.</h4>
+            <img src="image/projet3 part1.png" alt="Image d'un chat">
+        </div>
+        <div id="part2">
+            <h4>Ceci est le système de gestion de fichier, séparé à chaque conversation, répertoriant tous les fichiers envoyés dans la conversation et ceux déposés depuis cette interface, rangés en différents fichiers créés par l'utilisateur. On peut remarquer le fil d'Ariane en haut du menu, ainsi que les différentes options de personnalisation en fonction des propriétés du fichier sur la droite.</h4>
+            <img src="image/projet3 part2.png" alt="Image du menu de documents">
+        </div>
     </section>
     
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Mes compétences</h4>
+                    <h4>Mes spécialités</h4>
                     <ul>
                         <li><a href="#">Python</a></li>
                         <li><a href="#">C++</a></li>
@@ -51,7 +66,5 @@
             </div>
         </div>
    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

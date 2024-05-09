@@ -12,15 +12,30 @@
     </header>
 
     <section id="presentation">
-        <h3>Qui suis-je ?</h3>
-        <p>Alternant pour ma 3ème année de Bachelor en développement Informatique, voici un extrait de quelques-un des projets de ma formation. Je m'engage maintenant sur la voie de l'IA en Master.</p>
+        <h3>Qu'est-ce que c'est ?</h3>
+        <p>Ce projet est un outil ayant pour objectif de permettre aux maîtres de jeu de rôles de créer plus, plus vite, et mieux grâce à l'IA ! Il permet de croiser les personnages, lieux et quêtes, afin de permettre une cohérence maximale sans effort.</p>
+        <h3>Comment ça a été fait ?</h3>
+        <p>Ce projet a été réalisé en trinôme au travers de différentes technologies : une interface en Angular permet de communiquer avec un serveur en python, une BD postgres et les modèles d'IA.</p>
+        <h3>Coté technique</h3>
+        <p>Ce projet permet, au travers de llama.cpp, d'utiliser et de changer de modèles à la volée. Au sein des fichiers de l'application se trouve des pré-prompte, ainsi que des dictionnaires, permettant d'exprimer clairement a l'IA les attendus structurellement parfois complexes. Différents scripts valident ensuite la conformité du Json retourné par l'IA, avant d'être montré a l'utilisateur pour validation. Durant notre projet, nous avons par défaut permis le choix entre un modèle de Mistral et celui de Meta.</p>
+    </section>
+
+    <section id="content">
+        <div id="part1">
+            <h4>La liste des mondes, à gauche, permet de paramétrer le monde actif qui lie tous les menus accessibles sur l'interface de navigation en haut, permettant en fonction des préférences de l'utilisateur de créer des liens entre les objets générés.</h4>
+            <img src="image/projet1 part1.png" alt="Image montrant l'interface de l'application avec les mondes à gauche, et un menu de selection de la liste centrale en haut contenant world, scenario, quest et bien d'autres">
+        </div>
+        <div id="part2">
+            <h4>Voici un exemple au travers de l'objet "World". L'utilisateur peut, comme montré ici, en créer un lui-même, qui sera dynamiquement rajouté à la liste de gauche. Autrement, il lui suffit d'entrer une prompt et un style, pour pouvoir être redirigé sur cette page qui sera préremplie par l'IA à partir des informations fournies par l'utilisateur.</h4>
+            <img src="image/projet1 part2.png" alt="Interface permettant de renter un nom, un style et une description pour un monde">
+        </div>
     </section>
     
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Mes compétences</h4>
+                    <h4>Mes spécialités</h4>
                     <ul>
                         <li><a href="#">Python</a></li>
                         <li><a href="#">C++</a></li>
@@ -51,7 +66,5 @@
             </div>
         </div>
    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
